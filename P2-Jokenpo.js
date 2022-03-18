@@ -36,7 +36,7 @@ while (start == "sim") {
 let npartidas = +prompt(`\nQuantas partidas gostaria de jogar?   \n`);
     while (npartidas <= 0) {
         console.log(`\nComando invalido. Digite um número de partidas maior que 0.\n`);
-        npartidas = prompt(`Quantas partidas gostaria de jogar?\n`).toLowerCase();
+        npartidas = +prompt(`Quantas partidas gostaria de jogar?\n`).toLowerCase();
     
         
     }
