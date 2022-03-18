@@ -34,7 +34,12 @@ while (start == "sim") {
 
 // Variável para saber o número de partidas que o usuário deseja jogar
 let npartidas = +prompt(`\nQuantas partidas gostaria de jogar?   \n`);
-
+    while (npartidas <= 0) {
+        console.log(`\nComando invalido. Digite um número de partidas maior que 0.\n`);
+        npartidas = prompt(`Quantas partidas gostaria de jogar?\n`).toLowerCase();
+    
+        
+    }
 const jogada = ["Pedra", "Papel", "Tesoura"] ;
 
 let jogador 
